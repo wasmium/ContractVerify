@@ -1,0 +1,14 @@
+[package]
+name = "common-types"
+version = "0.2.0"
+edition = "2021"
+authors = ["Wasmium Network Developers <hq@wasmium.network>"]
+license = "MPL-2.0"
+homepage = "https://github.com/wasmium/ContractVerify"
+repository = "https://github.com/wasmium/ContractVerify.git"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+borsh = "0.9.3"
+bs58 = "0.4.0"
