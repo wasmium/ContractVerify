@@ -1,0 +1,27 @@
+[package]
+name = "verify_program"
+version = "0.2.0"
+edition = "2021"
+authors = ["Wasmium Network Developers <hq@wasmium.network>"]
+license = "MPL-2.0"
+homepage = "https://github.com/wasmium/ContractVerify"
+repository = "https://github.com/wasmium/ContractVerify.git"
+
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+name = "verify_program"
+crate-type = ["lib", "cdylib"]
+
+[dependencies]
+borsh = "0.9.3"
+solana-program = "1.10.25"
+zeroed-store = { git = "https://github.com/wasmium/ZeroedStore.git", features = [
+    "non_constant_sizeof",
+], default-features = false }
+common-types = { path = "../CommonTypes" }
+blake3 = { version = "1.3.1", default-features = false }
+
+[features]
+no-entrypoint = []
