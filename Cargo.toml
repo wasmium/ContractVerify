@@ -1,0 +1,6 @@
+[workspace]
+members = [
+    "VerifyProgram",
+    "VerifyClient",
+    "CommonTypes",
+]
