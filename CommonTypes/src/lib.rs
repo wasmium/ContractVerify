@@ -26,3 +26,7 @@ pub use common::*;
 /// Outcome of the verification program
 mod outcome;
 pub use outcome::*;
+
+/// Instructions for contract processing
+mod instructions;
+pub use instructions::*;
